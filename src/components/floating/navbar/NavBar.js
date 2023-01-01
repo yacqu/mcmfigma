@@ -20,7 +20,7 @@ function NavBar() {
       <NavBarContainer>
         <AppBar className='nav-bar-app-bar' position="static">
           <Toolbar className='nav-bar-tool-bar' variant='dense'>
-            <Stack className='nav-bar-stack' direction="row" alignItems="center" spacing={2}>
+            <Stack className='nav-bar-stack' direction="row" alignItems="center" spacing={1.8}>
               <Button className='nav-bar-stack-btn' color="inherit" component="div">
               <NavBarLinkText>Home</NavBarLinkText>
               </Button>
@@ -66,17 +66,14 @@ padding: 1% 5% 1%;
 `;
 const NavBarContainer = styled.div`
 padding: 1% 5% 1%;
-
-`;
-const NavBarLogoText = styled.div`
-
-padding: 1% 1% 1%;
-font-size: 24px;
-width: 100%;
 `;
 const NavBarLinkText = styled.div`
-padding: 1% 2% 1%;
+padding: 1% 1% 1%;
 font-size: 16px;
-font-family:'Times New Roman', Times, serif;
+font-family: 'Arvo', serif;
 width: 100%;
+font-weight: bolder;
+letter-spacing: 1px;
 `;
+
+
