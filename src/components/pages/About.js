@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components";
 
-import NavBar2 from '../floating/navbar/navbar2/NavBar2'
+import NavBar from '../floating/navbar/NavBar'
 import { Device } from '../responsive/Device.js'
 
 function About() {
@@ -12,14 +12,14 @@ function About() {
       <PageWrapper>
         <HeroSection>
           <NavBarWrapper>
-            <NavBar2 />
+            <NavBar />
           </NavBarWrapper>
           <HeroSectionTitleContainer>
             <HeroSectionTitle>
                 Welcome To MCM PHOENIX
             </HeroSectionTitle>
             <HeroSectionSubTitle>
-                Him
+                Serving Phoenix Since 1987
             </HeroSectionSubTitle>
           </HeroSectionTitleContainer>
         </HeroSection>
@@ -45,8 +45,8 @@ flex-direction: column;
 align-items: center;
 justify-content: flex-start;
 background-image: url("/images/herosection/img-hero-home-cropped-horizontall.jpg");
-height: 80vh;  
-background-position: 50% 40%;
+height: 70vh;  
+background-position: 50% 50%;
 background-repeat: no-repeat;
 background-size: cover;
 background-blend-mode: lighten;
@@ -57,14 +57,12 @@ isolation: isolate;
   position: absolute;
   z-index: -1;
   inset: 0;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
-
-
 `;
 
 const NavBarWrapper = styled.div`
@@ -83,7 +81,6 @@ justify-content: center;
       max-width: 60%;
       width: 100%;
   }
-
 `;
 const HeroSectionTitleContainer = styled.h1`
 width: 100%;
@@ -108,8 +105,8 @@ justify-content: flex-start;
 }
 `;
 const HeroSectionTitle = styled.h1`
-padding: 20vh 2px 1px 2px;
-font-size: 72px;
+padding: 12vh 2px 1px 2px;
+font-size: 7vh;
 width: 60%;
 margin-bottom: 0;
 font-family: 'Libre Baskerville', serif;
