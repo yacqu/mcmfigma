@@ -14,33 +14,33 @@ function NavBar() {
   return (
     <NavBarWrapper>
       <NavBarLogo>
-        <img className='nav-bar-img' alt="logo" src="/images/logos/logo-mcm-circle.png" />
+        <img className='nav-bar-img' alt="logo" src="/images/logos/img-main-logo-wide.png" />
       </NavBarLogo>
-
       <NavBarContainer>
         <AppBar className='nav-bar-app-bar' position="static">
           <Toolbar className='nav-bar-tool-bar' variant='dense'>
+
             <Stack className='nav-bar-stack' direction="row" alignItems="center" spacing={1.8}>
               <Button className='nav-bar-stack-btn' color="inherit" component="div">
-              <NavBarLinkText>Home</NavBarLinkText>
+                <NavBarLinkText>Home</NavBarLinkText>
               </Button>
               <Button className='nav-bar-stack-btn' color="inherit" component="div">
-              <NavBarLinkText>Events</NavBarLinkText>
+                <NavBarLinkText>Events</NavBarLinkText>
               </Button>
               <Button className='nav-bar-stack-btn' color="inherit" component="div">
-              <NavBarLinkText>Services</NavBarLinkText>
+                <NavBarLinkText>Services</NavBarLinkText>
               </Button>
               <Button className='nav-bar-stack-btn' color="inherit" component="div">
-              <NavBarLinkText>Programs</NavBarLinkText>
+                <NavBarLinkText>Programs</NavBarLinkText>
               </Button>
               <Button className='nav-bar-stack-btn' color="inherit" component="div">
-              <NavBarLinkText>Construction</NavBarLinkText>
+                <NavBarLinkText>Construction</NavBarLinkText>
               </Button>
               <Button className='nav-bar-stack-btn' color="inherit" component="div">
-              <NavBarLinkText>Contact</NavBarLinkText>
+                <NavBarLinkText>Contact</NavBarLinkText>
               </Button>
               <Button className='nav-bar-stack-btn' color="inherit" component="div">
-              <NavBarLinkText>Donate</NavBarLinkText>
+                <NavBarLinkText>Donate</NavBarLinkText>
               </Button>
 
             </Stack>
@@ -70,10 +70,10 @@ padding: 1% 5% 1%;
 const NavBarLinkText = styled.div`
 padding: 1% 1% 1%;
 font-size: 16px;
-font-family: 'Arvo', serif;
 width: 100%;
-font-weight: bolder;
+font-weight: 900;
 letter-spacing: 1px;
+font-family:serif;
 `;
 
 

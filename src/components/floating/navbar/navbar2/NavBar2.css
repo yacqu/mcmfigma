@@ -1,0 +1,180 @@
+:root {
+    --nav-link-color: #618012;
+    --white: #ffffff;
+    --nav-font: 'Courier New', Courier, monospace;
+}
+
+
+.nav-bar-floating-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar-floating-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar-floating-logo-container { 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.nav-bar-floating-content-btn-container {
+    display: none;
+}
+
+.nav-bar-floating-logo {
+    width: 250px;
+    height: 125px;
+}
+
+.nav-bar-floating-content-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.nav-bar-floating-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar-floating-content-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-inline-start: 0;
+
+}
+
+.nav-bar-floating-content-list-item {
+    text-decoration: none;
+    list-style: none;
+    padding: 1px 40px 1px 2px;
+    width: 100%;
+}
+
+.nav-bar-floating-content-list-item-title {
+    text-transform: uppercase;
+    font-family: var(--nav-font);
+    color: var(--nav-link-color);
+}
+
+.nav-bar-floating-content-list-item-link {
+    text-decoration: none;
+    color: var(--nav-link-color);
+}
+
+.nav-bar-floating-content-list-item-link:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--nav-link-color);  
+}
+
+@media (max-width: 1560px) {
+
+    .nav-bar-floating-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-bar-floating-content-list {
+        display: none;
+        transition: 5s;
+    }
+    .nav-bar-floating-content-btn-container{
+       display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 1px 1px 1px 2px;
+
+    }
+    .nav-bar-floating-content-btn {
+
+    }
+    .nav-bar-floating-content-btn-icon {
+
+    }
+    .nav-bar-floating-logo-container { 
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+
+}
+
+
+{/*
+                            <li className='nav-bar-floating-content-list-item'>
+                            <h1 className='nav-bar-floating-content-list-item-title'>
+                                <NavLink to='/' className='nav-bar-floating-content-list-item-link'>
+                                    HOME
+                                </NavLink>
+                            </h1>
+                        </li>
+                        <li className='nav-bar-floating-content-list-item'>
+                            <h1 className='nav-bar-floating-content-list-item-title'>
+                                <NavLink to='/about' className='nav-bar-floating-content-list-item-link'>
+                                    ABOUT
+                                </NavLink>
+                            </h1>
+                        </li>
+                        <li className='nav-bar-floating-content-list-item'>
+                            <h1 className='nav-bar-floating-content-list-item-title'>
+                                <NavLink to='/services' className='nav-bar-floating-content-list-item-link'>
+                                    SERVICES
+                                </NavLink>
+                            </h1>
+                        </li>
+                        <li className='nav-bar-floating-content-list-item'>
+                            <h1 className='nav-bar-floating-content-list-item-title'>
+                                <NavLink to='/programs' className='nav-bar-floating-content-list-item-link'>
+                                    PROGRAMS
+                                </NavLink>
+                            </h1>
+                        </li>
+                        <li className='nav-bar-floating-content-list-item'>
+                            <h1 className='nav-bar-floating-content-list-item-title'>
+                                <NavLink to='/construction' className='nav-bar-floating-content-list-item-link'>
+                                    CONSTRUCTION
+                                </NavLink>
+                            </h1>
+                        </li>
+                        <li className='nav-bar-floating-content-list-item'>
+                            <h1 className='nav-bar-floating-content-list-item-title'>
+                                <NavLink to='/contact' className='nav-bar-floating-content-list-item-link'>
+                                    CONTACT
+                                </NavLink>
+                            </h1>
+                        </li>
+                        <li className='nav-bar-floating-content-list-item'>
+                            <h1 className='nav-bar-floating-content-list-item-title'>
+                                <NavLink to='/donate' className='nav-bar-floating-content-list-item-link'>
+                                    DONATE
+                                </NavLink>
+                            </h1>
+                        </li>
+
+    */}

@@ -1,18 +1,19 @@
 
 .nav-bar-img {
-    width: 175px;
-    height: 175px;
+    width: 250px;
+    height: 125;
+    filter: brightness(30%);
 }
 .nav-bar-app-bar {
     padding: 0%;
-    background-image: linear-gradient(180deg, #4e372e,#6b4939 );
+    background-image: linear-gradient(180deg, #4e372e,#92644e );
     border-radius: 10px;
 }
 
 .nav-bar-tool-bar {
     width: 800px;
     padding: 1% 1% 1%;
-    background-image: linear-gradient(180deg, #4e372e,#6b4939 );
+    background-image: linear-gradient(180deg, #5a4137,#7e5846 );
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -25,11 +26,18 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    color: #0d1a0d;
-    font-weight: bolder;
-    opacity: 0.7;
+    color: #1f2805;
+    font-weight: 900;
+    text-shadow: 0 4px 4px #1e3a2740; 
+
 }
 
 .nav-bar-stack-btn {
     padding: 1% 1% 1%;
+
+}
+
+
+@media (max-width: 600px) {
+    
 }

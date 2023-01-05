@@ -36,6 +36,7 @@ function Home() {
 export default Home
 
 const PageWrapper = styled.div`
+marging-left: 1%;
 width: 100%;
 display: flex;
 flex-direction: column;
@@ -44,7 +45,6 @@ justify-content: center;
 const HeroSection = styled.div`
 background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
   url(/images/herosection/img-hero-home-cropped.jpg);
-
 width: 100%;
 height: 806px;
 position: absolute;
@@ -61,15 +61,16 @@ justify-content: center;
 postion: relative;
 `;
 const HeroSectionTitleContainer = styled.div`
-margin-left: 20%;
-color: #1a231a;
+margin-left: 26%;
+color: #1f2805;
 opacity: 0.8;
 `;
 const HeroSectionTitleMainText = styled.h1`
-font-family: 'Bebas Neue', cursive;
+font-family: 'Playfair Display', serif;
 font-size: 72px;
 font-weight: 400;
-width: 450px;
+width: 500px;
+height: 250px;
 text-shadow: 0 4px 4px #00000040;
 letter-spacing: 2px;
 `;
