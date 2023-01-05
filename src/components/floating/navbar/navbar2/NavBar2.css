@@ -86,31 +86,19 @@
     color: var(--nav-link-color);  
 }
 
+.nav-bar-floating-content-list-toggle{
+    display: none;
+}
+
 @media (max-width: 1560px) {
 
     .nav-bar-floating-container {
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
-    }
-    .nav-bar-floating-content-list {
-        display: none;
-        transition: 5s;
-    }
-    .nav-bar-floating-content-btn-container{
-       display: flex;
-        justify-content: center;
-        width: 100%;
-        padding: 1px 1px 1px 2px;
-
-    }
-    .nav-bar-floating-content-btn {
-
-    }
-    .nav-bar-floating-content-btn-icon {
-
+        border-bottom: 1px solid #b5b1b1;
     }
     .nav-bar-floating-logo-container { 
         width: 100%;
@@ -118,8 +106,101 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        padding: 1px 20px 1px 2px;
+    }
+    .nav-bar-floating-content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-bar-floating-content-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;   
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        transform: translateX(-100%);
+        transition: all .45s;
 
     }
+
+    .nav-bar-floating-content-btn-container{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        padding: 1px 5% 1px 1px;
+
+    }
+    .nav-bar-floating-content-list-toggle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-bar-floating-content-list-toggle.open{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .nav-bar-floating-content-list.open {
+        transform: translateX(0);
+    }
+    
+    .nav-bar-floating-content-list-item {
+        text-decoration: none;
+        list-style: none;
+        padding: 1px 40px 1px 2px;
+        width: 100%;
+    }
+
+    .nav-bar-floating-content-list-item::before {
+        background: transparent;
+    }
+
+    .bar {
+        position: relative;
+        width: 32px;
+        height: 2px;
+        background: #3b3939;
+        transition: all 0.45s ease-in-out;
+      }
+    .bar::before,
+    .bar::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background: #393737;
+        border-radius: 2px;
+        transition: all 0.45s ease-in-out;
+      }
+    .bar::before {
+        width: 25px;
+        transform: translateY(-8px);
+        right: 0;
+      }
+
+    .bar::after {
+        width: 32px;
+        transform: translateY(8px);
+      }
+    .nav-bar-floating-content-list-toggle.open > .bar::before {
+        width: 32px;
+        transform: rotate(45deg) translate(26px, -26px);
+    }
+
+    .nav-bar-floating-content-list-toggle.open .bar::after {
+        transform: rotate(-45deg) translate(26px, 26px);
+      }
+    
+
 
 
 
@@ -176,5 +257,42 @@
                                 </NavLink>
                             </h1>
                         </li>
+
+
+
+
+                                            <div className='nav-bar-floating-content-btn-container'>
+                        <button className='nav-bar-floating-content-btn' onClick={toggleMenu}>
+                            <img src='/images/icons/img-menu-icon.svg' className='nav-bar-floating-content-btn-icon' alt='menu' />
+                        </button>
+                    </div>
+
+
+
+
+                    <div className='nav-bar-floating-content-list-toggle'>
+                        <button className='nav-bar-floating-content-list-toggle-button' onClick={() => setMenuOpen(!menuOpen)}>
+                            <img src='/images/icons/img-menu-icon.svg' className='nav-bar-floating-content-btn-icon' alt='menu' />
+                        </button>
+                        <ul className='nav-bar-floating-content-list-mobile'>
+                            {Object.entries(links).map(([key, value]) => (
+                                <li className='nav-bar-floating-content-list-item-mobile'>
+                                    <h1 key={key} className='nav-bar-floating-content-list-item-title-mobile'>
+                                        <NavLink  to={`${value}`} className='nav-bar-floating-content-list-item-link-mobile'>
+                                            {key}
+                                        </NavLink>
+                                    </h1></li>
+                            ))} 
+                        </ul>
+                    </div>
+
+
+
+
+
+
+
+
+
 
     */}
