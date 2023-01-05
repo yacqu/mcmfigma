@@ -45,9 +45,9 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: flex-start;
-background-image: url("/images/herosection/img-hero-home-cropped-horizontall.jpg");
+background-image: url("/images/herosection/img-hero-donate.jpg");
 height: 70vh;  
-background-position: 50% 50%;
+background-position: 50% 20%;
 background-repeat: no-repeat;
 background-size: cover;
 background-blend-mode: lighten;
@@ -71,6 +71,10 @@ width: 100%;
 display: flex;
 flex-direction: row;
 justify-content: center;
+isolation: isolate;
+position: relative;
+color: #273307;
+
   @media ${Device.laptop} {
     width: 100%;
   }
@@ -81,6 +85,17 @@ justify-content: center;
   @media ${Device.desktop} {
       max-width: 60%;
       width: 100%;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-image: linear-gradient(180deg, #0e6097, #072e48);
+    border-radius: 1px;
+    box-shadow: 0 4px 30px #0a3e5f;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
   }
 `;
 const HeroSectionTitleContainer = styled.h1`

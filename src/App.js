@@ -32,7 +32,6 @@ function App() {
 
           <Route path='/dev' element={<Dev />} />
         </Routes>
-        <Footer />
       </Router>
     
     </>
