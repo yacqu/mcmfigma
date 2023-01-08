@@ -31,9 +31,9 @@ export default Services
 
 const PageWrapper = styled.div`
 width: 100%;
+height: 100vh;
 display: flex;
 flex-direction: column;
-justify-content: center;
 `;
 
 const HeroSection = styled.div`
@@ -42,9 +42,9 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: flex-start;
-background-image: url("/images/herosection/img-hero-services.jpg");
+background-image: url("/images/herosection/img-hero-about.jpg");
 height: 70vh;  
-background-position: 50% 30%;
+background-position: 50% 80%;
 background-repeat: no-repeat;
 background-size: cover;
 
@@ -55,13 +55,12 @@ isolation: isolate;
   position: absolute;
   z-index: -1;
   inset: 0;
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 `;
-
 const NavBarWrapper = styled.div`
 width: 100%;
 display: flex;

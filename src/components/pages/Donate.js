@@ -34,9 +34,9 @@ export default Donate
 
 const PageWrapper = styled.div`
 width: 100%;
+height: 100vh;
 display: flex;
 flex-direction: column;
-justify-content: center;
 `;
 
 const HeroSection = styled.div`
@@ -45,12 +45,12 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: flex-start;
-background-image: url("/images/herosection/img-hero-donate.jpg");
+background-image: url("/images/herosection/img-hero-about.jpg");
 height: 70vh;  
-background-position: 50% 20%;
+background-position: 50% 80%;
 background-repeat: no-repeat;
 background-size: cover;
-background-blend-mode: lighten;
+
 position: relative;
 isolation: isolate;
 &:after {
@@ -60,9 +60,8 @@ isolation: isolate;
   inset: 0;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 `;
 
@@ -71,10 +70,6 @@ width: 100%;
 display: flex;
 flex-direction: row;
 justify-content: center;
-isolation: isolate;
-position: relative;
-color: #273307;
-
   @media ${Device.laptop} {
     width: 100%;
   }
@@ -86,21 +81,9 @@ color: #273307;
       max-width: 60%;
       width: 100%;
   }
-  &:after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    inset: 0;
-    background-image: linear-gradient(180deg, #0e6097, #072e48);
-    border-radius: 1px;
-    box-shadow: 0 4px 30px #0a3e5f;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-  }
 `;
 const HeroSectionTitleContainer = styled.h1`
 width: 100%;
-
 display: flex;
 flex-direction: column;
 align-items: flex-start;
@@ -126,7 +109,7 @@ font-size: 7vh;
 width: 60%;
 margin-bottom: 0;
 font-family: 'Libre Baskerville', serif;
-opacity: 0.6;
+opacity: 0.8;
 color: #4d660f;
 text-shadow: 0 1px 0 #ccc, 
                0 2px 0 #c9c9c9,

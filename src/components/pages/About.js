@@ -1,10 +1,17 @@
 import React from 'react'
 import styled from "styled-components";
+import AboutCallToAction from '../aboutpage/AboutCallToAction';
+import LargeCardItem from '../cards/large_cards/LargeCardItem';
 
 import NavBar from '../floating/navbar/NavBar'
 import { Device } from '../responsive/Device.js'
 
+import image1 from '../../assets/images/img-3d-mosque-white.png';
+import image2 from '../../assets/images/img-3d-mosque-green.png';
+
+
 function About() {
+  const AboutCardText = 'Welcome to the Muslim Community Mosque (MCM)! We are a diverse and welcoming community of believers, committed to promoting understanding and harmony among all people.'
 
 
   return (
@@ -16,14 +23,29 @@ function About() {
           </NavBarWrapper>
           <HeroSectionTitleContainer>
             <HeroSectionTitle>
-                Welcome To MCM PHOENIX
+                ABOUT MCM PHOENIX
             </HeroSectionTitle>
             <HeroSectionSubTitle>
                 Serving Phoenix Since 1987
             </HeroSectionSubTitle>
           </HeroSectionTitleContainer>
         </HeroSection>
+        <AboutCallToAction />
+        <CardSectionWrapper>
+          <LargeCardItem 
+          title="ABOUT MCM PHOENIX" 
+          image={image1}
+          subtitle='who we are'
+          text={AboutCardText}
+          cardHeight='500px' />
 
+          <LargeCardItem 
+          title="Mission Statement" 
+          image={image2}
+          subtitle='who we are'
+          text={AboutCardText}
+          cardHeight='500px'/>
+        </CardSectionWrapper>
       </PageWrapper>
     </>
   )
@@ -33,11 +55,9 @@ export default About
 
 const PageWrapper = styled.div`
 width: 100%;
-height: 100vh;
 display: flex;
 flex-direction: column;
 `;
-
 const HeroSection = styled.div`
 width: 100%;
 display: flex;
@@ -45,7 +65,7 @@ flex-direction: column;
 align-items: center;
 justify-content: flex-start;
 background-image: url("/images/herosection/img-hero-about.jpg");
-height: 70vh;  
+height: 700px;  
 background-position: 50% 80%;
 background-repeat: no-repeat;
 background-size: cover;
@@ -82,28 +102,34 @@ justify-content: center;
 `;
 const HeroSectionTitleContainer = styled.div`
 width: 100%;
+max-height: 700px;
 display: flex;
 flex-direction: column;
 align-items: flex-start;
 justify-content: flex-start;
 @media ${Device.laptop} {
   width: 100%;
+  max-height: 700px;
 }
 @media ${Device.laptopL} {
   max-width: 60%;
   width: 100%;
+  max-height: 700px;
 }
 @media ${Device.desktop} {
     max-width: 60%;
     width: 100%;
+  max-height: 700px;
 }
 @media (max-width: 1560px) {
   display: none;
+  max-height: 700px;
 }
 `;
 const HeroSectionTitle = styled.h1`
+max-height: 700px;
 padding: 12vh 2px 1px 2px;
-font-size: 7vh;
+font-size: 72px;
 width: 60%;
 margin-bottom: 0;
 font-family: 'Libre Baskerville', serif;
@@ -132,3 +158,10 @@ opacity: 0.7;
 color: #4d660f;
 text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
 `;
+const CardSectionWrapper = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 150px 10px 20px 10px;
+`;
+

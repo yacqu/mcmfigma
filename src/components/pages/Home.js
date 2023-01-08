@@ -32,9 +32,9 @@ export default Home
 
 const PageWrapper = styled.div`
 width: 100%;
+height: 100vh;
 display: flex;
 flex-direction: column;
-justify-content: center;
 `;
 
 const HeroSection = styled.div`
@@ -43,12 +43,12 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: flex-start;
-background-image: url("/images/herosection/img-hero-home-cropped-horizontall.jpg");
+background-image: url("/images/herosection/img-hero-about.jpg");
 height: 70vh;  
-background-position: 50% 50%;
+background-position: 50% 80%;
 background-repeat: no-repeat;
 background-size: cover;
-background-blend-mode: lighten;
+
 position: relative;
 isolation: isolate;
 &:after {
@@ -58,12 +58,10 @@ isolation: isolate;
   inset: 0;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 `;
-
 const NavBarWrapper = styled.div`
 width: 100%;
 display: flex;
@@ -81,9 +79,8 @@ justify-content: center;
       width: 100%;
   }
 `;
-const HeroSectionTitleContainer = styled.h1`
+const HeroSectionTitleContainer = styled.div`
 width: 100%;
-
 display: flex;
 flex-direction: column;
 align-items: flex-start;
@@ -109,7 +106,7 @@ font-size: 7vh;
 width: 60%;
 margin-bottom: 0;
 font-family: 'Libre Baskerville', serif;
-opacity: 0.6;
+opacity: 0.8;
 color: #4d660f;
 text-shadow: 0 1px 0 #ccc, 
                0 2px 0 #c9c9c9,

@@ -1,0 +1,22 @@
+:root {
+    --about-action-font-size: 24px;
+    --about-action-font-family:'Libre Baskerville', serif ;
+
+}
+
+.about-action-button {
+    padding: 15px 30px 15px;
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+    background-color: #a9be74;
+    box-shadow: 0 1px solid rgba(143, 139, 139, 0.25);
+    border: none ;
+}
+
+.about-action-button-text {
+    font-size: var(--about-action-font-size);
+    font-family: var(--about-action-font-family);
+    color: #324404;
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+
+}
