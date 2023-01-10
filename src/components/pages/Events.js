@@ -3,6 +3,7 @@ import React from 'react'
 import styled from "styled-components";
 
 import NavBar from '../floating/navbar/NavBar'
+import PrayerBanner from '../prayertimes/PrayerBanner';
 import { Device } from '../responsive/Device.js'
 
 function Events() {
@@ -24,6 +25,7 @@ function Events() {
             </HeroSectionSubTitle>
           </HeroSectionTitleContainer>
         </HeroSection>
+        <PrayerBanner />
 
       </PageWrapper>
     </>

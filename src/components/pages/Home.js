@@ -1,8 +1,15 @@
 import React from 'react'
 import styled from "styled-components";
+import AboutCallToAction from '../aboutpage/AboutCallToAction';
 
 import NavBar from '../floating/navbar/NavBar'
+import NewsCard from '../newscards/NewsCard';
+import PrayerBanner from '../prayertimes/PrayerBanner';
 import { Device } from '../responsive/Device.js'
+
+import image1 from '../../assets/images/img-3d-bismilaah.png';
+import image2 from '../../assets/images/img-3d-bismilaah.png';
+import image3 from '../../assets/images/img-3d-bismilaah.png';
 
 function Home() {
   return (
@@ -22,6 +29,25 @@ function Home() {
           </HeroSectionTitleContainer>
         </HeroSection>
 
+        <PrayerBanner />
+
+        <AboutCallToAction />
+
+        <NewsCardsWrapper>
+          <NewsCardsTitle>
+            News & Updates
+          </NewsCardsTitle>
+          <NewsCards>
+            {Object.keys(cards).map((key, value)=> (
+                <NewsCard key={key} image={cards[key].image} 
+                  title={cards[key].title} 
+                  text={cards[key].text} />))}
+          </NewsCards>
+          
+        </NewsCardsWrapper>
+        
+        
+
       </PageWrapper>
     
     </>
@@ -29,6 +55,48 @@ function Home() {
 }
 
 export default Home
+
+
+const cards = {
+  card1: {
+    image: image1,
+    title: `Card 1`,
+    text: `Card 1 Text`,
+  },
+  card2: {
+    image: image2,
+    title: `Card 1`,
+    text: `Card 1 Text`,
+  },
+  card3: {
+    image: image3,
+    title: `Card 1`,
+    text: `Card 1 Text`,
+  },
+  card4: {
+    image: image3,
+    title: `Card 1`,
+    text: `Card 1 Text`,
+  },
+  card5: {
+    image: image3,
+    title: `Card 1`,
+    text: `Card 1 Text`,
+  },
+  card6: {
+    image: image3,
+    title: `Card 1`,
+    text: `Card 1 Text`,
+  },
+  card7: {
+    image: image3,
+    title: `Card 1`,
+    text: `Card 1 Text`,
+  }
+}
+
+
+
 
 const PageWrapper = styled.div`
 width: 100%;
@@ -44,11 +112,10 @@ flex-direction: column;
 align-items: center;
 justify-content: flex-start;
 background-image: url("/images/herosection/img-hero-about.jpg");
-height: 70vh;  
+min-height: 700px; 
 background-position: 50% 80%;
 background-repeat: no-repeat;
 background-size: cover;
-
 position: relative;
 isolation: isolate;
 &:after {
@@ -120,7 +187,6 @@ text-shadow: 0 1px 0 #ccc,
                0 5px 10px rgba(0,0,0,.25),
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
-
 `;
 const HeroSectionSubTitle = styled.h2`
 font-size: 22px;
@@ -130,4 +196,30 @@ font-family: 'Libre Baskerville', serif;
 opacity: 0.7;
 color: #4d660f;
 text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+`;
+const NewsCardsWrapper = styled.div`
+padding: 10px 0px 10px 0px;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+`;
+
+const NewsCardsTitle = styled.h1`
+text-align: center;
+font-family: "El Messiri", Sans-serif;
+color: #4d660f;
+`;
+
+const NewsCards = styled.div`
+padding: 10px 0px 10px 0px;
+width: 60%;
+height: 100%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+border: 1px solid black;
 `;

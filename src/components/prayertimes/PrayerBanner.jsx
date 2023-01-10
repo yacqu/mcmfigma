@@ -55,10 +55,10 @@ export default PrayerBanner
 
 const PrayerBannerWrapper = styled.div`
 width: 100%;
-height: 110px;
+min-height: 160px;
 display: flex;
 justify-content: center;
-background: linear-gradient(180deg, rgba(199,205,208,0.9568811411283263) 83%, rgba(255,255,255,1) 97%);
+background: linear-gradient(180deg, #a5acaff4 83%, rgba(255,255,255,1) 97%);
 color: #4e5a5e;
 
 `;
