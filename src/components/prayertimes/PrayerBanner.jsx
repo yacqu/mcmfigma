@@ -34,7 +34,7 @@ function PrayerBanner() {
                 </div>
 
                 <div className='prayer-banner-right-container'>
-                    <h1>times</h1>
+                    <h1>times now</h1>
                 </div>
             </div>
         </div>
