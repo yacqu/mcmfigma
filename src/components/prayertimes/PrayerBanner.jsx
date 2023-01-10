@@ -20,9 +20,6 @@ function PrayerBanner() {
         fetchData();
     }, []);
 
-    const fajr = apiData?.data?.timings?.Fajr;
-
-
   return (
     <PrayerBannerWrapper>
         <div className='prayer-banner-container'>
@@ -30,11 +27,22 @@ function PrayerBanner() {
                 <div className='prayer-banner-left-container'>
                     <h1>Prayer Times</h1>
                     <h2>Phoenix, Az</h2>
-       
                 </div>
 
                 <div className='prayer-banner-right-container'>
-                    <h1>times now</h1>
+                    {apiData && Object.entries(apiData.data.data.timings).map(([key, value]) => {
+                        if (desiredPrayers.includes(key)) {
+                        return (  
+                            <div>                                        
+                                <li key={key} className='prayer-times-widget-item'>
+                                    <h2 className='prayer-times-widget-item-title' key={key}>
+                                        {key}
+                                    </h2> 
+                                    {value}
+                                </li>
+                            </div> 
+                        )}}
+                    )}
                 </div>
             </div>
         </div>
@@ -47,9 +55,10 @@ export default PrayerBanner
 
 const PrayerBannerWrapper = styled.div`
 width: 100%;
-height: 120px;
+height: 110px;
 display: flex;
 justify-content: center;
-border: 1px solid black;
-background-color: #58696e;
+background: linear-gradient(180deg, rgba(199,205,208,0.9568811411283263) 83%, rgba(255,255,255,1) 97%);
+color: #4e5a5e;
+
 `;

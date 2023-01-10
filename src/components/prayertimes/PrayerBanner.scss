@@ -1,11 +1,15 @@
-
+$prayer-time-text-font-size: 22px;  
+$prayer-time-number-font-size: 28px;  
+$prayer-time-font-family: "El Messiri", Sans-serif;
 
 .prayer-banner-container {
+    padding: 10px 10px 10px 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center ;
     width: 60%;
+    background: linear-gradient(180deg, rgba(194, 202, 206, 0.957) 83%, rgba(255,255,255,1) 97%);
 }
 
 .prayer-banner-content {
@@ -14,7 +18,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    font-family: $prayer-time-font-family;
 }
 
 .prayer-banner-left-container {
@@ -22,7 +27,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: flex-start;
     flex: 0.2;
     h1 {
         padding-top: 0px;
@@ -42,7 +47,38 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    flex: 0.8;
+    justify-content: space-between;
+    flex: 0.7;
+
+    div {
+        padding: 10px 10px 10px 10px;
+        height: 100%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin: 0px;
+        border-left: 1px solid #4e5a5e;
+        border-right: 1px solid #4e5a5e;
+
+        li {
+            padding-top: 0px;
+            padding-bottom: 0px;
+            margin: 0px;
+            height: 100%;
+            text-align: center;
+            text-decoration: none;
+            list-style: none;
+            font-weight: 800;
+            font-size: $prayer-time-number-font-size;
+
+            h2 {
+                padding-top: 0px;
+                padding-bottom: 0px;
+                margin: 0px;
+                font-weight: 400;
+                font-size: $prayer-time-text-font-size;
+            }
+        }
+    }
+
 
 }
