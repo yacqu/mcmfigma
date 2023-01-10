@@ -74,7 +74,7 @@ width: 60%;
 height: ${props => props.cardHeight};
 display: flex;
 flex-direction: column;
-border-radius: 25px;
+border-radius: 15px;
 box-shadow: 0 2px 7px 1px rgba(31, 31, 31, 0.2);
 background-color: var(--large-card-color);
 color: white;
@@ -101,7 +101,8 @@ background-color: var(--circle-color);
 border-radius: 50%;
 `;
 const LargeCardTopContainer = styled.div`
-padding: 1em 15px;
+height: 100vh;
+padding: 1em 2em;
 width: 100%;
 display: flex;
 flex-direction: column;
@@ -110,11 +111,12 @@ align-items: flex-start;
 flex: 1.2;
 `;
 const LargeCardBottomContainer = styled.div`
-padding: 0 1em;
+padding: 6vh 4em;
 flex: 2.8;
 display: flex;
 `;
 const LargeCardText = styled.h1`
+
 text-transform: uppercase;
 margin: 4;
 z-index: 10;
@@ -148,25 +150,31 @@ margin-top: -0.3em;
 `;
 
 const LargeCardBottomDetailsContainer = styled.div`
-width: 90%;
+width: 60%;
 height: 100%;
 display: flex;
 flex-direction: column;
-padding: 2.5em 6px 0 6px;
+padding: 8.5em 10px 0 6px;
 line-height: 1.4;
 `;
-const LargeCardBottomDetailsMediumText = styled.div`
-font-size: 18px;
-color: var(---large-card-text-color);
+const LargeCardBottomDetailsMediumText = styled.p`
+font-size: 14px;
+color:  #4c5041;
 font-weight: 800;
-text-transform: uppercase;
-text-shadow: var(--large-card-h2-text-shadow)
+font-family: "Arial", "Helvetica", "sans-serif";
+line-height: 40px;
+padding-inline-start: 40px;
+letter-spacing: 0.5px;
+font-weight: 500;
 `;
 const LargeCardBottomDetailsSmallText = styled.div`
+padding-inline-start: 3em;
 font-size: 11px;
-color: white;
+color: #e2e2e2;
 font-weight: 700;
 text-transform: uppercase;
+font-family: "Arial", "Helvetica", "sans-serif";
+font-weight: 500;
 `;
 const LargeCardBottomSpacedHorizontalContainer = styled.div`
 width: 100%;

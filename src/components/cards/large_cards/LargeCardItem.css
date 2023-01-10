@@ -1,11 +1,11 @@
 :root {
     --card-font-size: 20px;
-    --large-card-color: #a4aa93;
-    --circle-color:  #a9be74;
+    --large-card-color: #bac0aa;
+    --circle-color:  #b7ca87;
     --large-card-btn: black;
     --large-card-btn-font-size: 16px;
     --large-card-text-color: #e6f0cf;
-    --large-card-h1-text-shadow: 0 13.36px 8.896px #6e755a,0 -2px 1px #fff;
+    --large-card-h1-text-shadow: 0 10.36px 8.896px #5a6147,0 -2px 1px #fff;
     --large-card-h2-text-shadow: 0 1px 1px #6e755a,0 -1px 1px #fff;
 }
 
