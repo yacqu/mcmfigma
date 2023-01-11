@@ -11,6 +11,7 @@ import image1 from '../../assets/images/img-3d-calendar.png';
 import image2 from '../../assets/images/img-3d-calendar.png';
 import image3 from '../../assets/images/img-3d-calendar.png';
 import HelpUs from '../homepage/HelpUs';
+import Footer from '../floating/footer/Footer';
 
 function Home() {
   return (
@@ -47,8 +48,12 @@ function Home() {
         </NewsCardsWrapper>
         <HelpUs />
 
+      
+        <FooterWrapper>
+          <Footer />
+
+        </FooterWrapper>
       </PageWrapper>
-    
     </>
   )
 }
@@ -215,5 +220,13 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
+`;
 
+const FooterWrapper = styled.div`
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #f8fcf3;
 `;
