@@ -1,0 +1,122 @@
+
+$help-us-container-color: #f8fcf3;
+
+$help-us-h1-title-font-family: "El Messiri", Sans-serif;
+$help-us-h1-title-font-size: 60px;
+$help-us-h1-title-font-weight: 600;
+$help-us-h1-title-font-color: #4d660f;
+
+$help-us-h2-title-font-family: "El Messiri", Sans-serif;
+$help-us-h2-title-font-size: 20px;
+$help-us-h2-title-font-weight: 400;
+$help-us-h2-title-font-color: #5c614f;
+
+$help-us-p-title-font-family: "El Messiri", Sans-serif;
+$help-us-p-title-font-size: 22px;
+$help-us-p-title-font-weight: 600;
+$help-us-p-title-font-color: #65685e;
+
+$help-us-button-font-family: "El Messiri", Sans-serif;
+$help-us-button-font-size: 22px;
+$help-us-button-font-weight: 800;
+$help-us-button-font-color: #ffffff;
+$help-us-button-color: #4d660f;
+
+
+
+.help-us-container {
+    padding: 100px 10px 100px 10px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $help-us-container-color;
+    border-radius: 10px;
+}
+
+.help-us-content-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.help-us-button {
+    padding: 20px 0px 10px 0px;
+
+    button {
+        background-color: $help-us-button-color;
+        width: 250px;
+        height: 60px;
+        border: none;
+        border-radius: 10px;
+        font-size: $help-us-button-font-size;
+        font-family: $help-us-button-font-family;
+        transition: transform 0.3s ease;
+        font-weight: $help-us-button-font-weight;
+        
+        &:hover{
+            transform: translateY(-10px);
+            opacity: 0.8;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: $help-us-button-font-color;
+
+            &:visited {
+                color: $help-us-button-font-color;
+
+            }
+        }
+
+    }
+
+}
+
+.help-us-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+        margin: 0;
+        text-align: center;
+        font-family: $help-us-h1-title-font-family;
+        font-size: $help-us-h1-title-font-size;
+        font-weight: $help-us-h1-title-font-weight;
+        color: $help-us-h1-title-font-color;
+    }
+
+    h2 {
+        margin: 0;
+        text-align: center;
+        opacity: 0.8;
+        font-family: $help-us-h2-title-font-family;
+        font-size: $help-us-h2-title-font-size;
+        font-weight: $help-us-h2-title-font-weight;
+        color: $help-us-h2-title-font-color;
+    }
+}
+
+.help-us-text {
+    padding: 20px 100px 20px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    p {    
+        margin: 0;   
+        padding: 10px 80px 10px 80px;
+        line-height: 35px;
+        text-align: center;
+        font-family: $help-us-p-title-font-family;
+        font-size: $help-us-p-title-font-size;
+        font-weight: $help-us-p-title-font-weight;
+        color: $help-us-p-title-font-color;
+    }
+}

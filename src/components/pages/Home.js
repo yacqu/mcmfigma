@@ -7,9 +7,10 @@ import NewsCard from '../newscards/NewsCard';
 import PrayerBanner from '../prayertimes/PrayerBanner';
 import { Device } from '../responsive/Device.js'
 
-import image1 from '../../assets/images/img-3d-bismilaah.png';
-import image2 from '../../assets/images/img-3d-bismilaah.png';
-import image3 from '../../assets/images/img-3d-bismilaah.png';
+import image1 from '../../assets/images/img-3d-calendar.png';
+import image2 from '../../assets/images/img-3d-calendar.png';
+import image3 from '../../assets/images/img-3d-calendar.png';
+import HelpUs from '../homepage/HelpUs';
 
 function Home() {
   return (
@@ -41,12 +42,10 @@ function Home() {
             {Object.keys(cards).map((key, value)=> (
                 <NewsCard key={key} image={cards[key].image} 
                   title={cards[key].title} 
-                  text={cards[key].text} />))}
+                  text={cards[key].text} link={cards[key].link} />))}
           </NewsCards>
-          
         </NewsCardsWrapper>
-        
-        
+        <HelpUs />
 
       </PageWrapper>
     
@@ -59,40 +58,35 @@ export default Home
 
 const cards = {
   card1: {
+    link:`/construction`,
     image: image1,
-    title: `Card 1`,
-    text: `Card 1 Text`,
+    title: `New Masjid Construction`,
+    text: `The MCM Phoenix mosque is currently undergoing 
+      construction to expand and modernize its facilities. 
+      The new mosque will feature a larger prayer hall, 
+      classrooms for religious education, and community 
+      gathering spaces. Join the community and Donate`,
   },
   card2: {
+    link:`/services`,
     image: image2,
-    title: `Card 1`,
-    text: `Card 1 Text`,
+    title: `Ramadan Training`,
+    text: `MCM Phoenix mosque is offering Ramadan training 
+      sessions to help members of the community prepare for 
+      the holy month. These sessions will include teachings on 
+      the spiritual significance of Ramadan, as well as practical 
+      guidance on fasting and other observances.`,
   },
   card3: {
+    link:`/services`,
     image: image3,
-    title: `Card 1`,
-    text: `Card 1 Text`,
+    title: `Hajj Program`,
+    text: `MCM Phoenix mosque is organizing a Hajj program for 
+      members of the community who wish to embark on the pilgrimage 
+      to Mecca. The program will include guidance on the 
+      preparations and rituals of the Hajj, as well as assistance 
+      with the logistics of the trip`,
   },
-  card4: {
-    image: image3,
-    title: `Card 1`,
-    text: `Card 1 Text`,
-  },
-  card5: {
-    image: image3,
-    title: `Card 1`,
-    text: `Card 1 Text`,
-  },
-  card6: {
-    image: image3,
-    title: `Card 1`,
-    text: `Card 1 Text`,
-  },
-  card7: {
-    image: image3,
-    title: `Card 1`,
-    text: `Card 1 Text`,
-  }
 }
 
 
@@ -198,7 +192,7 @@ color: #4d660f;
 text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
 `;
 const NewsCardsWrapper = styled.div`
-padding: 10px 0px 10px 0px;
+padding: 80px 0px 10px 0px;
 width: 100%;
 height: 100%;
 display: flex;
@@ -219,7 +213,7 @@ width: 60%;
 height: 100%;
 display: flex;
 flex-direction: row;
-justify-content: center;
+justify-content: space-between;
 align-items: center;
-border: 1px solid black;
+
 `;

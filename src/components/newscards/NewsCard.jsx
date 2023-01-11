@@ -6,7 +6,8 @@ import './NewsCard.scss'
 function NewsCard(props) {
   return (
     <NewsCardsWrapper>
-        <div className='news-card-container'>
+      <div className='news-card-container'>
+        <a href={props.link}>
           <div className='news-card-content'>
             <div className='news-card'>
               <img src={props.image} alt='card image' />
@@ -14,7 +15,8 @@ function NewsCard(props) {
               <p>{props.text}</p>
             </div>
           </div>
-        </div>
+        </a>
+      </div>
     </NewsCardsWrapper>
   )
 }
@@ -22,8 +24,6 @@ function NewsCard(props) {
 export default NewsCard
 
 const NewsCardsWrapper = styled.div`
-width: 100%;
 display: flex;
-justify-content: center;
-align-items: center;
+max-width: 400px;
 `;
