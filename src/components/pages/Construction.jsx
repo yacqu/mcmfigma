@@ -1,43 +1,50 @@
+
+
 import React from 'react'
 import styled from "styled-components";
+import Footer from '../floating/footer/Footer';
 
 import NavBar from '../floating/navbar/NavBar'
 import PrayerBanner from '../prayertimes/PrayerBanner';
 import { Device } from '../responsive/Device.js'
 
-function Services() {
+function Construction() {
+
+
   return (
     <>
-    <PageWrapper>
-      <HeroSection>
-        <NavBarWrapper>
-          <NavBar />
-        </NavBarWrapper>
-        <HeroSectionTitleContainer>
-          <HeroSectionTitle>
-              Welcome To MCM PHOENIX
-          </HeroSectionTitle>
-          <HeroSectionSubTitle>
-              Serving Phoenix Since 1987
-          </HeroSectionSubTitle>
-        </HeroSectionTitleContainer>
-      </HeroSection>
-      <PrayerBanner />
+      <PageWrapper>
+        <HeroSection>
+          <NavBarWrapper>
+            <NavBar />
+          </NavBarWrapper>
+          <HeroSectionTitleContainer>
+            <HeroSectionTitle>
+                Welcome To MCM PHOENIX
+            </HeroSectionTitle>
+            <HeroSectionSubTitle>
+                Serving Phoenix Since 1987
+            </HeroSectionSubTitle>
+          </HeroSectionTitleContainer>
+        </HeroSection>
+        <PrayerBanner />
 
-    </PageWrapper>
-  </>
+        <FooterWrapper>
+          <Footer />
+        </FooterWrapper>
+      </PageWrapper>
+    </>
   )
 }
 
-export default Services
+export default Construction
 
 const PageWrapper = styled.div`
-width: 100%;
-height: 100vh;
+width: 100%; 
 display: flex;
 flex-direction: column;
+align-items: center;
 `;
-
 const HeroSection = styled.div`
 width: 100%;
 display: flex;
@@ -45,7 +52,7 @@ flex-direction: column;
 align-items: center;
 justify-content: flex-start;
 background-image: url("/images/herosection/img-hero-about.jpg");
-height: 70vh;  
+height: 700px;  
 background-position: 50% 80%;
 background-repeat: no-repeat;
 background-size: cover;
@@ -131,4 +138,12 @@ font-family: 'Libre Baskerville', serif;
 opacity: 0.7;
 color: #4d660f;
 text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+`;
+const FooterWrapper = styled.div`
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #f8fcf3;
 `;

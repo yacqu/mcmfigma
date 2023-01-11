@@ -1,13 +1,13 @@
 
-
 import React from 'react'
 import styled from "styled-components";
+import Footer from '../floating/footer/Footer';
 
 import NavBar from '../floating/navbar/NavBar'
 import PrayerBanner from '../prayertimes/PrayerBanner';
 import { Device } from '../responsive/Device.js'
 
-function Contact() {
+function Donate() {
 
 
   return (
@@ -28,20 +28,22 @@ function Contact() {
         </HeroSection>
         <PrayerBanner />
 
+        <FooterWrapper>
+          <Footer />
+        </FooterWrapper>
       </PageWrapper>
     </>
   )
 }
 
-export default Contact
+export default Donate
 
 const PageWrapper = styled.div`
-width: 100%;
-height: 100vh;
+width: 100%; 
 display: flex;
 flex-direction: column;
+align-items: center;
 `;
-
 const HeroSection = styled.div`
 width: 100%;
 display: flex;
@@ -49,7 +51,7 @@ flex-direction: column;
 align-items: center;
 justify-content: flex-start;
 background-image: url("/images/herosection/img-hero-about.jpg");
-height: 70vh;  
+height: 700px;  
 background-position: 50% 80%;
 background-repeat: no-repeat;
 background-size: cover;
@@ -67,6 +69,7 @@ isolation: isolate;
   -webkit-backdrop-filter: blur(2px);
 }
 `;
+
 const NavBarWrapper = styled.div`
 width: 100%;
 display: flex;
@@ -84,7 +87,7 @@ justify-content: center;
       width: 100%;
   }
 `;
-const HeroSectionTitleContainer = styled.div`
+const HeroSectionTitleContainer = styled.h1`
 width: 100%;
 display: flex;
 flex-direction: column;
@@ -135,4 +138,12 @@ font-family: 'Libre Baskerville', serif;
 opacity: 0.7;
 color: #4d660f;
 text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+`;
+const FooterWrapper = styled.div`
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #f8fcf3;
 `;

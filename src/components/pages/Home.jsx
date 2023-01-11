@@ -51,7 +51,6 @@ function Home() {
       
         <FooterWrapper>
           <Footer />
-
         </FooterWrapper>
       </PageWrapper>
     </>

@@ -1,6 +1,7 @@
 
 import React from 'react'
 import styled from "styled-components";
+import Footer from '../floating/footer/Footer';
 
 import NavBar from '../floating/navbar/NavBar'
 import PrayerBanner from '../prayertimes/PrayerBanner';
@@ -27,6 +28,9 @@ function Events() {
         </HeroSection>
         <PrayerBanner />
 
+        <FooterWrapper>
+          <Footer />
+        </FooterWrapper>
       </PageWrapper>
     </>
   )
@@ -35,24 +39,23 @@ function Events() {
 export default Events
 
 const PageWrapper = styled.div`
-width: 100%;
+width: 100%; 
 display: flex;
 flex-direction: column;
-justify-content: center;
+align-items: center;
 `;
-
 const HeroSection = styled.div`
 width: 100%;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: flex-start;
-background-image: url("/images/herosection/img-hero-home-cropped-horizontall.jpg");
-height: 70vh;  
-background-position: 50% 50%;
+background-image: url("/images/herosection/img-hero-about.jpg");
+height: 700px;  
+background-position: 50% 80%;
 background-repeat: no-repeat;
 background-size: cover;
-background-blend-mode: lighten;
+
 position: relative;
 isolation: isolate;
 &:after {
@@ -62,9 +65,8 @@ isolation: isolate;
   inset: 0;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 `;
 
@@ -137,4 +139,12 @@ font-family: 'Libre Baskerville', serif;
 opacity: 0.7;
 color: #4d660f;
 text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+`;
+const FooterWrapper = styled.div`
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #f8fcf3;
 `;

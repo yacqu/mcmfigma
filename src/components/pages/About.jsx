@@ -9,6 +9,7 @@ import { Device } from '../responsive/Device.js'
 import image1 from '../../assets/images/img-3d-mosque-white.png';
 import image2 from '../../assets/images/img-3d-mosque-green.png';
 import PrayerBanner from '../prayertimes/PrayerBanner';
+import Footer from '../floating/footer/Footer';
 
 
 function About() {
@@ -47,6 +48,10 @@ function About() {
           cardHeight={MissionCardText.cardHeight}/>
 
         </CardSectionWrapper>
+
+        <FooterWrapper>
+          <Footer />
+        </FooterWrapper>
       </PageWrapper>
     </>
   )
@@ -106,6 +111,7 @@ const PageWrapper = styled.div`
 width: 100%; 
 display: flex;
 flex-direction: column;
+align-items: center;
 `;
 const HeroSection = styled.div`
 width: 100%;
@@ -213,3 +219,11 @@ justify-content: center;
 padding: 150px 10px 20px 10px;
 `;
 
+const FooterWrapper = styled.div`
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #f8fcf3;
+`;

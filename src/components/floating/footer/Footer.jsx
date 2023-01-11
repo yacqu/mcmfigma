@@ -4,6 +4,11 @@ import { NavLink } from 'react-router-dom'
 
 import './Footer.scss'
 
+import fbLogo from '../../../assets/logos/icons8-facebook-30.png';
+import igLogo from '../../../assets/logos/icons8-instagram-30.png';
+import ytLogo from '../../../assets/logos/icons8-youtube-30.png';
+import twLogo from '../../../assets/logos/icons8-twitter-30.png';
+
 function Footer() {
   return (
     <FooterWrapper>
@@ -34,8 +39,10 @@ function Footer() {
               </div>
               <div className='footer-bottom-contact-content'>
                 <ul>
-                  <li>Address: 1818 N 32nd St, Phoenix, AZ 85008</li>
+                  <li>Address: <br/> 1818 N 32nd St, Phoenix, AZ 85008</li>
+                  <br/>
                   <li>Phone: (602) 306-4959</li>
+                  <br/>
                   <li>Email: contact@mcmphoenix.com</li>
                 </ul>
               </div>
@@ -65,10 +72,10 @@ function Footer() {
               </div>
               <div className='footer-bottom-social-content'>
                 <ul>
-                  <li><NavLink> <img src='' alt='fb'/> Facebook</NavLink></li>
-                  <li><NavLink> <img src='' alt='IG'/> Instagram</NavLink></li>
-                  <li><NavLink> <img src='' alt='YT'/> Youtube</NavLink></li>
-                  <li><NavLink> <img src='' alt='TW'/> Twitter</NavLink></li>
+                  <li><NavLink> <img src={fbLogo} alt='fb'/> Facebook</NavLink></li>
+                  <li><NavLink> <img src={igLogo} alt='IG'/> Instagram</NavLink></li>
+                  <li><NavLink> <img src={ytLogo} alt='YT'/> Youtube</NavLink></li>
+                  <li><NavLink> <img src={twLogo} alt='TW'/> Twitter</NavLink></li>
                 </ul>
               </div>
 
