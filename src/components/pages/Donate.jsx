@@ -1,6 +1,7 @@
 
 import React from 'react'
 import styled from "styled-components";
+import DonateCallToAction from '../donatepage/DonateCallToAction.tsx';
 import Footer from '../floating/footer/Footer';
 
 import NavBar from '../floating/navbar/NavBar'
@@ -19,7 +20,7 @@ function Donate() {
           </NavBarWrapper>
           <HeroSectionTitleContainer>
             <HeroSectionTitle>
-                Welcome To MCM PHOENIX
+                Donate To MCM PHOENIX
             </HeroSectionTitle>
             <HeroSectionSubTitle>
                 Serving Phoenix Since 1987
@@ -27,6 +28,11 @@ function Donate() {
           </HeroSectionTitleContainer>
         </HeroSection>
         <PrayerBanner />
+
+        <DonateWrapper>
+          <DonateCallToAction />
+
+        </DonateWrapper>
 
         <FooterWrapper>
           <Footer />
@@ -146,4 +152,12 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 background-color: #f8fcf3;
+`;
+
+const DonateWrapper = styled.div`
+width: 60%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 `;
