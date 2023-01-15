@@ -416,8 +416,20 @@ $donate-action-side-car-menu-padding: 20px 0px 10px 0px;
     }
 }
 
+.donate-action-container-right-side-car-other-amount {
+    padding: 15px 0px 1px 0px;
+    form {
+        input {
+            width: 150px;
+            height: 30px;
+            border: none;
+            border-radius: 10px;
+        }
+    }
+}
+
 .donate-action-container-right-side-car-donate-now {
-    padding: 15px 0px 35px 0px;
+    padding: 15px 0px 15px 0px;
 
     button {
         &:hover {
@@ -446,3 +458,68 @@ $donate-action-side-car-menu-padding: 20px 0px 10px 0px;
     }
 }
 
+@media (max-width: 768px) {
+    .donate-action-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .donate-action-title-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;   
+        }
+        h3 {
+            text-align: center; 
+            margin-bottom: 0;
+        }
+    }
+    .donate-action-container-right-side-car-buton-list {
+        width: 100%;
+        ul {
+            margin-bottom: 0;
+            padding-inline-start: 0;
+            padding: 10px 0px 0px 0px;
+            li {
+                &:hover {
+                    opacity: 0.7;
+                    box-shadow: 2px 2px 2px #888888;
+                }
+                button {
+                    width: 100px;
+                    height: 100%;
+                    text-align: center;    
+                }
+            }
+        }
+    }
+    .donate-action-container-right-side-car-amount-list {
+        ul {
+            padding: 1px 15px 1px 15px;
+            width: 100%;
+            padding-inline-start: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li {
+                &:hover {
+                    opacity: 0.7;
+                    box-shadow: 2px 2px 2px #888888;
+                }
+                button {
+                    padding: 15px 10px 15px 10px;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+    
+        }
+    }
+
+}

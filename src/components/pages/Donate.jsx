@@ -33,10 +33,8 @@ function Donate() {
         <DonateBarWrapper>
           <DonationBar />  
         </DonateBarWrapper>
-        <DonateWrapper>  
-                
+        <DonateWrapper>       
           <DonateCallToAction />
-
         </DonateWrapper>
 
         <FooterWrapper>
@@ -160,7 +158,7 @@ background-color: #f8fcf3;
 `;
 
 const DonateWrapper = styled.div`
-padding-top: 200px;
+padding-top: 60px;
 padding-bottom: 60px;
 width: 60%;
 display: flex;
@@ -171,7 +169,7 @@ align-items: center;
 
 const DonateBarWrapper = styled.div`
 padding-top: 0px;
-padding-bottom: 60px;
+padding-bottom: 0px;
 width: 60%;
 display: flex;
 flex-direction: column;

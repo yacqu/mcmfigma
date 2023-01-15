@@ -112,6 +112,11 @@ const OnceMenu = ({highlightedButton, setHighlightedButton}) =>
             onClick={() => setHighlightedButton('25-button')}>$ 25</button></li>
         </ul>
     </div>
+    <div className="donate-action-container-right-side-car-other-amount">
+        <form>
+            <input type="number" placeholder='  $   enter amount' name="amount" />
+        </form>
+    </div>
 
     <div className='donate-action-container-right-side-car-donate-now'>
         <a href='https://www.paypal.com/donate/?hosted_button_id=LZGPUFLUNZC8E' >
@@ -150,7 +155,11 @@ const WeeklyMenu = ({highlightedButton, setHighlightedButton}) =>
             onClick={() => setHighlightedButton('25-button')}>$ 25</button></li>
         </ul>
     </div>
-
+    <div className="donate-action-container-right-side-car-other-amount">
+        <form>
+            <input type="number" placeholder='  $   enter amount' name="amount" />
+        </form>
+    </div>
     <div className='donate-action-container-right-side-car-donate-now'>
         <button>
             Donate Now
@@ -188,7 +197,11 @@ const MonthlyMenu = ({highlightedButton, setHighlightedButton}) =>
             onClick={() => setHighlightedButton('25-button')}>$ 25</button></li>
         </ul>
     </div>
-
+    <div className="donate-action-container-right-side-car-other-amount">
+        <form>
+            <input type="number" placeholder='  $   other amount' name="amount" />
+        </form>
+    </div>
     <div className='donate-action-container-right-side-car-donate-now'>
         <button>
             Donate Now
