@@ -12,6 +12,7 @@ import image2 from '../../assets/images/img-3d-calendar.png';
 import image3 from '../../assets/images/img-3d-calendar.png';
 import HelpUs from '../homepage/HelpUs';
 import Footer from '../floating/footer/Footer';
+import DonationBar from '../donatepage/DonationBar.tsx';
 
 function Home() {
   return (
@@ -46,9 +47,13 @@ function Home() {
                   text={cards[key].text} link={cards[key].link} />))}
           </NewsCards>
         </NewsCardsWrapper>
+        
+        <DonateBarWrapper>
+          <DonateBarContainer>
+            <DonationBar />
+          </DonateBarContainer>
+        </DonateBarWrapper>
         <HelpUs />
-
-      
         <FooterWrapper>
           <Footer />
         </FooterWrapper>
@@ -218,6 +223,20 @@ height: 100%;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
+align-items: center;
+`;
+const DonateBarWrapper = styled.div`
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+`;
+const DonateBarContainer = styled.div`
+width: 60%;
+height: 100%;
+display: flex;
+justify-content: center;
 align-items: center;
 `;
 

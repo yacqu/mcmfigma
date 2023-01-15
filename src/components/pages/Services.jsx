@@ -5,6 +5,8 @@ import Footer from '../floating/footer/Footer';
 import NavBar from '../floating/navbar/NavBar'
 import PrayerBanner from '../prayertimes/PrayerBanner';
 import { Device } from '../responsive/Device.js'
+import ServicesCards from '../servicespage/ServicesCards.tsx';
+import ServicesHero from '../servicespage/ServicesHero.tsx';
 
 function Services() {
   return (
@@ -24,6 +26,11 @@ function Services() {
         </HeroSectionTitleContainer>
       </HeroSection>
       <PrayerBanner />
+
+      <ServicesHero />
+      <ServicesCardsWrapper>
+        <ServicesCards />
+      </ServicesCardsWrapper>
 
       <FooterWrapper>
           <Footer />
@@ -134,6 +141,10 @@ font-family: 'Libre Baskerville', serif;
 opacity: 0.7;
 color: #4d660f;
 text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+`;
+
+const ServicesCardsWrapper = styled.div`
+  
 `;
 const FooterWrapper = styled.div`
 width: 100%;

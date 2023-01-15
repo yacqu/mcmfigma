@@ -1,7 +1,7 @@
 
-
 import React from 'react'
 import styled from "styled-components";
+import DonationBar from '../donatepage/DonationBar.tsx';
 import Footer from '../floating/footer/Footer';
 
 import NavBar from '../floating/navbar/NavBar'
@@ -28,6 +28,11 @@ function Construction() {
           </HeroSectionTitleContainer>
         </HeroSection>
         <PrayerBanner />
+        <DonateBarWrapper>
+          <DonateBarContainer>
+            <DonationBar />
+          </DonateBarContainer>
+        </DonateBarWrapper>
 
         <FooterWrapper>
           <Footer />
@@ -138,6 +143,20 @@ font-family: 'Libre Baskerville', serif;
 opacity: 0.7;
 color: #4d660f;
 text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+`;
+const DonateBarWrapper = styled.div`
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+`;
+const DonateBarContainer = styled.div`
+width: 60%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
 `;
 const FooterWrapper = styled.div`
 width: 100%;

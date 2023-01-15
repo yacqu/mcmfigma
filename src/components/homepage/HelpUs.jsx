@@ -68,7 +68,7 @@ function HelpUs() {
 export default HelpUs
 
 const HelpUsWrapper = styled.div`
-padding: 200px 10px 20px 10px;
+padding: 50px 10px 20px 10px;
 display: flex;
 justify-content: center;
 align-items: center;
