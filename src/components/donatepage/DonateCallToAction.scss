@@ -8,7 +8,7 @@ $donate-action-title-font-weight: 600;
 
 $donate-action-sub-title-font-family:"El Messiri", Sans-serif;
 $donate-action-sub-title-font-size: 22px;
-$donate-action-sub-title-font-color: #4d660f;
+$donate-action-sub-title-font-color: #94a172;
 $donate-action-sub-title-font-weight: 600;
 
 $donate-action-sub-sub-title-font-family:"El Messiri", Sans-serif;
@@ -21,21 +21,31 @@ $donate-action-text-title-font-size: 16px;
 $donate-action-text-title-font-color: #4d660f;
 $donate-action-text-title-font-weight: 600;
 
+$donate-action-text-font-family: "El Messiri", Sans-serif;;
+$donate-action-text-font-size: 16px;
+$donate-action-text-font-color: #6d745b;
+$donate-action-text-font-weight: 600;
+
 $donate-action-btn-title-font-family:"El Messiri", Sans-serif;
 $donate-action-btn-title-font-size: 18px;
-$donate-action-btn-title-font-color: #4d660f;
+$donate-action-btn-title-font-color: #4d6316;
 $donate-action-btn-title-font-weight: 600;
 $donate-action-btn-color: #e5ebd4;
 
+$donate-action-side-car-sub-title-font-family:"El Messiri", Sans-serif;
+$donate-action-side-car-sub-title-font-size: 34px;
+$donate-action-side-car-sub-title-font-color: #3c4e0e;
+$donate-action-side-car-sub-title-font-weight: 600;
+
 $donate-action-side-car-title-font-family:"El Messiri", Sans-serif;
-$donate-action-side-car-title-font-size: 26px;
-$donate-action-side-car-title-font-color: #333d18;
+$donate-action-side-car-title-font-size: 28px;
+$donate-action-side-car-title-font-color: #ffffff;
 $donate-action-side-car-title-font-weight: 600;
 $donate-action-side-car-color: #c6d1a9;
 
 $donate-action-side-car-menu-once-bg-color: #d4dfb8;
 $donate-action-side-car-menu-weekly-bg-color: #d3ddb6;
-$donate-action-side-car-menu-monthly-bg-color: #d6e0b8;
+$donate-action-side-car-menu-monthly-bg-color: #aaaf99;
 
 $donate-action-side-car-email-button-color:#3c4624;
 $donate-action-side-car-email-button-font-family:"El Messiri", Sans-serif;
@@ -47,16 +57,16 @@ $donate-action-side-car-input-bg-color:#f7fceb;
 $donate-action-side-car-input-font-size:12px;
 
 $donate-action-side-car-amount-button-color:#778650;
-$donate-action-side-car-amount-button-highlighted-color:#9cb168;
+$donate-action-side-car-amount-button-highlighted-color:#474e34;
 
 $donate-action-side-car-amount-button-font-family:"El Messiri", Sans-serif;
 $donate-action-side-car-amount-button-font-color:#56700d;
 $donate-action-side-car-amount-button-font-size: 22px;
 $donate-action-side-car-amount-button-font-weight: 900;
 
-$donate-action-side-car-time-button-highlighted-color:#bcc7a4;
-$donate-action-side-car-time-button-highlighted-colorW: #96a772;
-$donate-action-side-car-time-button-highlighted-colorM:#91bb53;
+$donate-action-side-car-time-button-highlighted-color:#adb991;
+$donate-action-side-car-time-button-highlighted-colorW: #9eaf77;
+$donate-action-side-car-time-button-highlighted-colorM:#738653;
 
 $donate-action-side-car-donate-button-color:#3c4624;
 $donate-action-side-car-donate-button-font-family:"El Messiri", Sans-serif;
@@ -81,8 +91,8 @@ $donate-action-side-car-menu-padding: 20px 0px 10px 0px;
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .donate-action-container-left {
@@ -90,17 +100,23 @@ $donate-action-side-car-menu-padding: 20px 0px 10px 0px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-
+    img {
+        width: 150px;
+        height: 150px;
+        transform: scale(1.8); 
+        transition: transform 0.5s ease-in-out;
+    }
 }
 
 .donate-action-title-container {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    
 
     h1 {
         font-family: $donate-action-title-font-family;
@@ -109,6 +125,7 @@ $donate-action-side-car-menu-padding: 20px 0px 10px 0px;
         font-weight: $donate-action-title-font-weight;
     }
     h2 {
+        margin: 0;
         font-family: $donate-action-sub-title-font-family;
         font-size: $donate-action-sub-title-font-size;
         color: $donate-action-sub-title-font-color;
@@ -119,6 +136,19 @@ $donate-action-side-car-menu-padding: 20px 0px 10px 0px;
         font-size: $donate-action-sub-sub-title-font-size;
         color: $donate-action-sub-sub-title-font-color;
         font-weight: $donate-action-sub-sub-title-font-weight;        
+    }
+}
+
+.donate-action-text-container {
+    padding: 10px 10% 10px 10%;
+    p {
+        text-align: center;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        font-family: $donate-action-text-font-family;
+        font-size: $donate-action-text-font-size;
+        color: $donate-action-text-font-color;
+        font-weight: $donate-action-text-font-weight;   
     }
 }
 
@@ -154,10 +184,12 @@ $donate-action-side-car-menu-padding: 20px 0px 10px 0px;
 .donate-action-container-right-side-car-title {
 
     h3 {
-        font-family: $donate-action-sub-sub-title-font-family;
-        font-size: $donate-action-sub-sub-title-font-size;
-        color: $donate-action-sub-sub-title-font-color;
-        font-weight: $donate-action-sub-sub-title-font-weight;        
+        margin-bottom: 0;
+        text-shadow: 0px 2px 4px #91948a;
+        font-family: $donate-action-side-car-sub-title-font-family;
+        font-size: $donate-action-side-car-sub-title-font-size;
+        color: $donate-action-side-car-sub-title-font-color;
+        font-weight: $donate-action-side-car-sub-title-font-weight;        
     }   
 }
 
@@ -177,8 +209,8 @@ $donate-action-side-car-menu-padding: 20px 0px 10px 0px;
             padding-inline-start: 0;
             list-style: none;
             background-color: $donate-action-btn-color;
-            border-top-left-radius:10px ;
-            border-top-right-radius:10px ;
+            border-top-left-radius:8px ;
+            border-top-right-radius:8px ;
 
             &:hover {
                 opacity: 0.7;
@@ -200,16 +232,22 @@ $donate-action-side-car-menu-padding: 20px 0px 10px 0px;
                 font-weight: $donate-action-btn-title-font-weight;
                 
                 &.highlighted {
+                    color: white;
+                    text-shadow: 0px 2px 4px #5f615b;
                     border-top-right-radius:10px ;
                     border-top-left-radius:10px ;
                     background-color: $donate-action-side-car-time-button-highlighted-color;
                 }
                 &.highlightedW {
+                    color: white;
+                    text-shadow: 0px 2px 4px #5c5e58;
                     border-top-right-radius:10px ;
                     border-top-left-radius:10px ;
                     background-color: $donate-action-side-car-time-button-highlighted-colorW;
                 }
                 &.highlightedM {
+                    color: white;
+                    text-shadow: 0px 2px 4px #131411;
                     border-top-left-radius:10px ;
                     border-top-right-radius:10px ;
                     background-color: $donate-action-side-car-time-button-highlighted-colorM;
@@ -220,6 +258,7 @@ $donate-action-side-car-menu-padding: 20px 0px 10px 0px;
 }
 
 .donate-action-container-right-side-car-menu-content {
+
     width: 100%;
     height: 100%;
     display: flex;
@@ -257,7 +296,9 @@ $donate-action-side-car-menu-padding: 20px 0px 10px 0px;
 }
 
 .donate-action-container-right-side-car-menu-weekly {
+    padding: $donate-action-side-car-menu-padding;
     background-color: $donate-action-side-car-time-button-highlighted-colorW;
+    border-bottom: 10px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -267,7 +308,9 @@ $donate-action-side-car-menu-padding: 20px 0px 10px 0px;
 }
 
 .donate-action-container-right-side-car-menu-monthly {
+    padding: $donate-action-side-car-menu-padding;
     background-color: $donate-action-side-car-time-button-highlighted-colorM;
+    border-bottom: 10px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -283,6 +326,7 @@ $donate-action-side-car-menu-padding: 20px 0px 10px 0px;
         font-size: $donate-action-side-car-title-font-size;
         font-weight: $donate-action-side-car-title-font-weight;
         color: $donate-action-side-car-title-font-color;
+        text-shadow: 0px 2px 4px #5c6150;
     }
 
     h3 {
@@ -317,7 +361,7 @@ $donate-action-side-car-menu-padding: 20px 0px 10px 0px;
             opacity: 0.7;
             box-shadow: 2px 2px 2px #888888;
         }
-        
+        text-shadow: 0px 2px 4px #000000;
         padding: 8px 20px 8px 20px;
         border: none;
         border-radius: 10px;
@@ -345,14 +389,12 @@ $donate-action-side-car-menu-padding: 20px 0px 10px 0px;
             list-style: none;
             background-color: $donate-action-btn-color;
             border-radius: 10px;
-
             &:hover {
                 opacity: 0.7;
                 box-shadow: 2px 2px 2px #888888;
             }
-
             button {
-                padding: 15px 50px 15px 50px;
+                padding: 15px 30px 15px 30px;
                 width: 100%;
                 height: 100%;
                 text-decoration: none;
@@ -362,8 +404,9 @@ $donate-action-side-car-menu-padding: 20px 0px 10px 0px;
                 color: $donate-action-side-car-amount-button-font-color;
                 font-size: $donate-action-side-car-amount-button-font-size;
                 font-weight:$donate-action-side-car-amount-button-font-weight;
-
+                cursor: pointer;
                 &.highlighted {
+                    color: white;
                     border-radius: 10px;
                     background-color: $donate-action-side-car-amount-button-highlighted-color;
                 }        
@@ -380,17 +423,26 @@ $donate-action-side-car-menu-padding: 20px 0px 10px 0px;
         &:hover {
             opacity: 0.7;
             box-shadow: 2px 2px 2px #888888;
+            cursor: pointer;
         }
         padding: 15px 50px 15px 50px;
         width: 100%;
         height: 100%;
         border-radius: 10px;
         border: none;
+        text-shadow: 0px 2px 4px #0c0f06;
         background-color: $donate-action-side-car-donate-button-color;
         font-family: $donate-action-side-car-donate-button-font-family;              
         color: $donate-action-side-car-donate-button-font-color;
         font-size: $donate-action-side-car-donate-button-font-size;
         font-weight:$donate-action-side-car-donate-button-font-weight;
+        a {
+            text-decoration: none;
+            color: $donate-action-side-car-donate-button-font-color;
+            &:visited {
+                color: $donate-action-side-car-donate-button-font-color;
+            }
+        }
     }
 }
 

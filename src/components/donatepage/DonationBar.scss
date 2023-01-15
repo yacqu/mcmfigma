@@ -1,0 +1,132 @@
+$donate-bar-wrapper-bg-color: #8a9176;
+
+$donate-bar-btn-color: #4d660f;
+$donate-bar-btn-font-family: "El Messiri", Sans-serif;
+$donate-bar-btn-font-color: #e5ebd6;
+$donate-bar-btn-font-size: 26px;
+
+$donate-bar-title-font-color: #e5ebd6;
+$donate-bar-title-font-family: "El Messiri", Sans-serif;
+$donate-bar-title-font-size: 36px;
+$donate-bar-title-font-weight: 600;
+
+$donate-bar-font-family: "El Messiri", Sans-serif;
+$donate-bar-font-size: 24px;
+$donate-bar-font-weight: 600;
+
+$donate-bar-progress-font-color: #e5ebd6;
+$donate-bar-goal-font-color: #273010;
+
+$donate-bar-remainder-bg-color: #e6e6d7;
+
+
+
+.donate-bar-wrapper {
+    width: 100%;
+    padding: 10px 0px 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $donate-bar-wrapper-bg-color;
+}
+
+.donate-bar-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.donate-bar-title {
+    width: 600px;
+    h1 {
+        color: $donate-bar-title-font-color;
+        font-family: $donate-bar-title-font-family;
+        font-size: $donate-bar-title-font-size;
+    }
+    h2 {
+        margin-top: 0;
+    }
+}
+
+.donate-bar-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: $donate-bar-font-family;
+    font-size: $donate-bar-font-size;
+    font-weight: $donate-bar-font-weight;
+}
+
+.donate-bar-box {
+    width: 100%;
+    height: 60px;
+	border-radius: 10px;
+    background-color: $donate-bar-remainder-bg-color;
+    -moz-box-shadow:    inset 0 0 10px #ccc;
+	-webkit-box-shadow: inset 0 0 10px #ccc;
+	box-shadow:         inset 0 0 10px #ccc;}
+    
+.donate-bar-goal {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3 {
+            margin: 0;
+            margin-block-end: 0;
+            color: $donate-bar-goal-font-color;
+        }
+}
+
+.donate-bar-progress {
+	height: 60px;
+	border-radius: 10px;
+	float: left;
+	width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	/* fallback */ 
+	background-color: #1c314a; 
+	/* Safari 4-5, Chrome 1-9 */ 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1c314a), to(#27425f)); 
+	/* Safari 5.1, Chrome 10+ */ 
+	background: -webkit-linear-gradient(top, #1c314a, #27425f); 
+	/* Firefox 3.6+ */ 
+	background: -moz-linear-gradient(top, #1c314a, #27425f); 
+	/* IE 10 */ 
+	background: -ms-linear-gradient(top, #1c314a, #27425f); 
+	/* Opera 11.10+ */ 
+	background: -o-linear-gradient(top, #1c314a, #27425f);
+    h3 {
+
+        color: $donate-bar-progress-font-color;
+    }	
+}
+
+.donate-bar-btn {
+    padding: 10px 20px 10px 20px;
+    a {
+        text-decoration: none;
+        &:visited {
+            color: $donate-bar-btn-font-color;
+        }
+        button {
+            width: 100px;
+            height: 60px;
+            border: none; 
+            border-radius: 10px;
+            font-family: $donate-bar-btn-font-family;
+            font-size: $donate-bar-btn-font-size;
+            color: $donate-bar-btn-font-color;
+            background-color:$donate-bar-btn-color;
+        }
+    }
+   
+}

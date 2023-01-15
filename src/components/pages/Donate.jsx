@@ -2,6 +2,7 @@
 import React from 'react'
 import styled from "styled-components";
 import DonateCallToAction from '../donatepage/DonateCallToAction.tsx';
+import DonationBar from '../donatepage/DonationBar.tsx';
 import Footer from '../floating/footer/Footer';
 
 import NavBar from '../floating/navbar/NavBar'
@@ -29,7 +30,11 @@ function Donate() {
         </HeroSection>
         <PrayerBanner />
 
-        <DonateWrapper>
+        <DonateBarWrapper>
+          <DonationBar />  
+        </DonateBarWrapper>
+        <DonateWrapper>  
+                
           <DonateCallToAction />
 
         </DonateWrapper>
@@ -155,8 +160,18 @@ background-color: #f8fcf3;
 `;
 
 const DonateWrapper = styled.div`
-padding-top: 10px;
-padding-bottom: 10px;
+padding-top: 200px;
+padding-bottom: 60px;
+width: 60%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+`;
+
+const DonateBarWrapper = styled.div`
+padding-top: 0px;
+padding-bottom: 60px;
 width: 60%;
 display: flex;
 flex-direction: column;
