@@ -155,6 +155,8 @@ background-color: #f8fcf3;
 `;
 
 const DonateWrapper = styled.div`
+padding-top: 10px;
+padding-bottom: 10px;
 width: 60%;
 display: flex;
 flex-direction: column;
