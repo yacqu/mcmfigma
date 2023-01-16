@@ -1,0 +1,113 @@
+
+$service-card-bg-color:white;
+
+$service-card-title-font-family: "El Messiri", Sans-serif;
+$service-card-title-font-color: #3c4624;
+$service-card-title-font-size: 20px;
+$service-card-title-font-weight: 600;
+
+$service-card-sub-title-font-family: "El Messiri", Sans-serif;
+$service-card-sub-title-font-color: #3c4624;
+$service-card-sub-title-font-size: 16px;
+$service-card-sub-title-font-weight: 600;
+
+$service-card-text-font-family: "El Messiri", Sans-serif;
+$service-card-text-font-color: #3c4624;
+$service-card-text-font-size: 16px;
+$service-card-text-font-weight: 600;
+
+
+.service-card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.service-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.service-card {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.service-card-image-circle-overlay {
+    position: absolute; /* make sure the circle is positioned absolute to the card */
+    left: 50%; /* center the circle horizontally */
+    top: 50%; /* center the circle vertically */
+    transform: translate(-50%, -50%); /* center the circle both horizontally and vertically */
+    width: 65px;    /* set the width of the circle */
+    height: 65px; /* set the height of the circle */
+    border-radius: 50%; /* make the circle a perfect circle */
+    background-color: rgba(6, 63, 14, 0.253); /* set the background color of the circle with a transparent black color */
+    mix-blend-mode: screen; 
+}
+
+.service-card-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: -10%;
+
+    width: 85px;
+    height: 85px;
+    img {
+        object-fit: cover;
+        width: 40px;
+        height: 40px;
+        transform: scale(1.2); 
+        transition: transform 0.5s ease-in-out;
+
+    }
+}
+
+.service-card-content {
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #aaaf9e;
+    border-radius: 10px;
+}
+
+.service-card-title {
+
+    h1 {
+        font-family: $service-card-title-font-family;
+        color: $service-card-title-font-color;
+        font-size: $service-card-title-font-size;
+        font-weight: $service-card-title-font-weight;
+    }
+    h2 {
+        font-family: $service-card-sub-title-font-family;
+        color: $service-card-sub-title-font-color;
+        font-size: $service-card-sub-title-font-size;
+        font-weight: $service-card-sub-title-font-weight;
+    }
+
+}
+
+.service-card-text {
+
+    p {
+        text-align: center;
+        font-family: $service-card-text-font-family;
+        color: $service-card-text-font-color;
+        font-size: $service-card-text-font-size;
+        font-weight: $service-card-text-font-weight;
+    }
+}

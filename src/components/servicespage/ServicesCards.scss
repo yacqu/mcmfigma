@@ -1,0 +1,23 @@
+
+
+$service-cards-title-font-family: white;
+$service-cards-title-font-color: #3c4624;
+$service-cards-title-font-size: 20px;
+$service-cards-title-font-weight: 600;
+
+
+.service-cards-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-cards-container {
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}

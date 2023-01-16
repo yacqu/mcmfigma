@@ -144,7 +144,7 @@ text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
 `;
 
 const ServicesCardsWrapper = styled.div`
-  
+  width: 60%;
 `;
 const FooterWrapper = styled.div`
 width: 100%;
