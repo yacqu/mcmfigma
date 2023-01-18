@@ -102,5 +102,35 @@ const Text = {
     of the Prophet Muhammad (PBUH). This program aims to ensure 
     that the couples have a solid foundation for a successful 
     and fulfilling marriage.`,
-    revert: ``,
+    revert: `MCM Phoenix mosque offers a Revert program for 
+    individuals who have recently converted to Islam. 
+    The program is designed to provide new Muslims with 
+    the support and guidance they need as they navigate their 
+    new faith and begin their journey as part of the Muslim 
+    community. The program includes classes and workshops on 
+    the basics of Islam, as well as opportunities to connect 
+    with other new Muslims and established members of the 
+    community. The curriculum is based on the teachings of 
+    Quran and Hadith and will provide a strong foundation on 
+    Islamic beliefs, practices and values. The program also 
+    provides ongoing support and resources for new Muslims to 
+    continue their learning and spiritual growth after the 
+    program concludes, with an emphasis on long-term community 
+    engagement and involvement. The goal of the program is to 
+    help new Muslims feel welcome and supported as they begin 
+    their new way of life as muslims.`,
+    zakat: `MCM Phoenix mosque offers a Zakat program to assist 
+    members of the community in fulfilling their Islamic 
+    obligation of giving to charity. The program provides 
+    guidance on the Islamic principles of giving and its 
+    importance in the Islamic faith, as well as information 
+    on the calculation and distribution of Zakat. The program 
+    also provides a platform for members of the community to 
+    donate their Zakat and Sadaqah funds to those in need, under 
+    the guidance of the mosque management. The program ensures 
+    that the funds are distributed in a fair and transparent 
+    manner, in accordance with the Islamic principles of charity 
+    and social justice. This program is an important way for the 
+    community to take care of its own and to help those in need 
+    and strengthen the community as a whole.`,
 };
