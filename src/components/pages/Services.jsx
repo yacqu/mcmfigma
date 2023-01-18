@@ -6,6 +6,7 @@ import NavBar from '../floating/navbar/NavBar'
 import PrayerBanner from '../prayertimes/PrayerBanner';
 import { Device } from '../responsive/Device.js'
 import ServicesCards from '../servicespage/ServicesCards.tsx';
+import ServicesContent from '../servicespage/ServicesContent.tsx';
 import ServicesHero from '../servicespage/ServicesHero.tsx';
 
 function Services() {
@@ -31,6 +32,9 @@ function Services() {
       <ServicesCardsWrapper>
         <ServicesCards />
       </ServicesCardsWrapper>
+      <ServicesContentWrapper>
+        <ServicesContent />
+      </ServicesContentWrapper>
 
       <FooterWrapper>
           <Footer />
@@ -145,6 +149,10 @@ text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
 
 const ServicesCardsWrapper = styled.div`
   width: 60%;
+`;
+const ServicesContentWrapper = styled.div`
+width: 60%;
+height: 100%;
 `;
 const FooterWrapper = styled.div`
 width: 100%;

@@ -2,13 +2,13 @@
 $service-card-bg-color:white;
 
 $service-card-title-font-family: "El Messiri", Sans-serif;
-$service-card-title-font-color: #3c4624;
-$service-card-title-font-size: 20px;
+$service-card-title-font-color: #ffffff;
+$service-card-title-font-size: 23px;
 $service-card-title-font-weight: 600;
 
 $service-card-sub-title-font-family: "El Messiri", Sans-serif;
-$service-card-sub-title-font-color: #3c4624;
-$service-card-sub-title-font-size: 16px;
+$service-card-sub-title-font-color: #313a1e;
+$service-card-sub-title-font-size: 18px;
 $service-card-sub-title-font-weight: 600;
 
 $service-card-text-font-family: "El Messiri", Sans-serif;
@@ -22,14 +22,18 @@ $service-card-text-font-weight: 600;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid black;
-}
+
+    }
 
 .service-card-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    background: linear-gradient(to bottom, transparent 25%, #b0d4b4 55%), linear-gradient(to top, transparent 75%, #c9ebcd 95%);
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px #a0aca2;
 }
 
 .service-card {
@@ -61,7 +65,7 @@ $service-card-text-font-weight: 600;
     padding-bottom: -10%;
 
     width: 85px;
-    height: 85px;
+    height: 225px;
     img {
         object-fit: cover;
         width: 40px;
@@ -80,13 +84,13 @@ $service-card-text-font-weight: 600;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #aaaf9e;
     border-radius: 10px;
 }
 
 .service-card-title {
 
     h1 {
+        text-shadow: 4px 5px 8px #000000;
         font-family: $service-card-title-font-family;
         color: $service-card-title-font-color;
         font-size: $service-card-title-font-size;
