@@ -1,0 +1,23 @@
+
+$program-cards-title-font-family: white;
+$program-cards-title-font-color: #3c4624;
+$program-cards-title-font-size: 20px;
+$program-cards-title-font-weight: 600;
+
+
+.program-cards-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.program-cards-container {
+    padding: 10px 10px 10px 10px;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}

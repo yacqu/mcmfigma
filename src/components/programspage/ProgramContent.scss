@@ -1,0 +1,181 @@
+
+
+
+$program-content-btn-color: #b2bd32;
+$program-content-btn-font-color: white;
+$program-content-btn-font-size: 28px;
+$program-content-btn-font-family: "El Messiri", Sans-serif;
+$program-content-font-family: "El Messiri", Sans-serif;
+
+
+$program-content-date-h1-font-color: #c67e14;
+$program-content-date-h1-font-size: 60px;
+
+$program-content-date-h3-font-color: #756955;
+$program-content-date-h3-font-size: 20px;
+
+$program-content-date-h4-font-color: #938367;
+$program-content-date-h4-font-size: 14px;
+
+
+$program-content-text-h4-font-color: #786e61;
+$program-content-text-h4-font-size: 30px;
+
+$program-content-text-p-font-color: #c3b5a1;
+$program-content-text-p-font-size: 18px;
+
+
+
+
+.program-content-wrapper {
+    width: 100%;
+    height: 650px;
+    font-family: $program-content-font-family;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.program-content-container {
+    width: 90%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.program-content-content {
+    width: 100%;
+    height: 100%;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.program-content-box {
+    width: 100%;
+    height: 200px;
+    padding: 0px;
+
+    background:
+        radial-gradient(at 9% 7%, rgb(194, 233, 199) 0px, transparent 50%),
+        radial-gradient(at 80% 4%, rgb(206, 241, 211) 0px, transparent 50%),
+        radial-gradient(at 42% 48%, rgb(223, 243, 226) 0px, transparent 50%),
+        radial-gradient(at 80% 50%, rgb(195, 233, 200) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, rgb(201, 224, 203) 0px, transparent 50%),
+        radial-gradient(at 80% 100%, rgb(203, 228, 206) 0px, transparent 50%),
+        radial-gradient(at 64% 52%, rgb(199, 224, 202) 0px, transparent 50%);
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+.program-content-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    h1 {    
+
+        font-size: $program-content-date-h1-font-size;
+        padding: 0px 20px 0px 40px;
+        color: $program-content-date-h1-font-color;
+    }
+}
+.program-content-date {
+    width: 100%;    
+    height: 100%;
+    margin: 0;
+    h3 {
+        padding-inline-start: 10px;
+        margin: 0;
+        width: 100%;
+        font-size: $program-content-date-h3-font-size;
+        color: $program-content-date-h3-font-color;
+    }
+    h4 {
+        padding-inline-start: 10px;
+        margin-top: 2px;
+        color: $program-content-date-h4-font-color;
+        font-size: $program-content-date-h4-font-size;
+    }
+}
+.program-content-img {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    img {    
+        scale: 1.5;
+        width: 150px;
+        height: 150px;
+    }
+    
+}
+.program-content-text-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.program-content-text {
+
+    display: flex;
+
+    flex-direction: column;
+
+    h4 {
+        margin: 0;
+        color: $program-content-text-h4-font-color;
+        font-size: $program-content-text-h4-font-size;
+    }
+    p {
+        margin: 0;
+        padding: 10px 0px;
+        color : $program-content-text-p-font-color;
+        font-size: $program-content-text-p-font-size;
+    }
+}
+.program-content-btn {
+    padding-right: 60px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+
+    button {
+
+        border: none;
+        border-radius: 10px;
+        width: 250px;
+        height: 60px;
+        font-weight: 900;
+        font-family: $program-content-btn-font-family;
+        font-size: $program-content-btn-font-size;
+        background-color: $program-content-btn-color;
+        color: $program-content-btn-font-color;
+        text-shadow: 2px 2px 2px #8b8b8b;;
+
+        &:hover {
+            opacity: 0.6;
+            color: black;
+            box-shadow: rgba(50, 50, 93, 0.25) 
+                0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 
+                0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 
+                0px -2px 6px 0px inset;
+            transform: scale(1.1);
+        }
+    }
+    
+}

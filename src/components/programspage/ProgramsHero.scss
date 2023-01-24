@@ -1,0 +1,65 @@
+$programs-hero-title-font-color:rgb(95, 105, 97);
+$programs-hero-title-font-family:"El Messiri", Sans-serif;
+$programs-hero-title-font-size: 36px;
+$programs-hero-title-font-weight: 900;
+
+$programs-hero-sub-title-font-color:rgb(123, 129, 125);
+$programs-hero-sub-title-font-family:"El Messiri", Sans-serif;
+$programs-hero-sub-title-font-size: 26px;
+$programs-hero-sub-title-font-weight: 900;
+
+$programs-hero-bg-color: rgb(116, 106, 106) ;
+
+
+.programs-hero-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color:rgb(172, 255, 156);
+    background:
+        radial-gradient(at 9% 7%, rgb(194, 233, 199) 0px, transparent 50%),
+        radial-gradient(at 80% 4%, rgb(206, 241, 211) 0px, transparent 50%),
+        radial-gradient(at 42% 48%, rgb(223, 243, 226) 0px, transparent 50%),
+        radial-gradient(at 80% 50%, rgb(195, 233, 200) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, rgb(201, 224, 203) 0px, transparent 50%),
+        radial-gradient(at 80% 100%, rgb(203, 228, 206) 0px, transparent 50%),
+        radial-gradient(at 64% 52%, rgb(199, 224, 202) 0px, transparent 50%);
+}
+
+.programs-hero-container {
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.programs-hero-title {
+    width: 100%;
+    h1{
+        color: $programs-hero-title-font-color;
+        font-family: $programs-hero-title-font-family;
+        font-size: $programs-hero-title-font-size;
+        font-weight: $programs-hero-title-font-weight;
+    }
+    h2{
+        opacity: 0.8;
+        color: $programs-hero-sub-title-font-color;
+        font-family: $programs-hero-sub-title-font-family;
+        font-size: $programs-hero-sub-title-font-size;
+        font-weight: $programs-hero-sub-title-font-weight;
+    }
+}
+
+.programs-hero-right-container {
+    img{
+        width: 200px;
+        height: 200px;
+    }
+}
+

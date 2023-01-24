@@ -6,6 +6,9 @@ import Footer from '../floating/footer/Footer';
 import NavBar from '../floating/navbar/NavBar'
 import PrayerBanner from '../prayertimes/PrayerBanner';
 import { Device } from '../responsive/Device.js'
+import ProgramsHero from '../programspage/ProgramsHero.tsx';
+import ProgramCards from '../programspage/ProgramCards.tsx';
+import ProgramContent from '../programspage/ProgramContent.tsx';
 
 function Programs() {
 
@@ -28,6 +31,14 @@ function Programs() {
         </HeroSection>
         <PrayerBanner />
 
+        <ProgramsHero />
+        <ProgramsCardsWrapper>
+          <ProgramCards />
+        </ProgramsCardsWrapper>
+        <ProgramsContentWrapper>
+          <ProgramContent />
+        </ProgramsContentWrapper>
+      
         <FooterWrapper>
           <Footer />
         </FooterWrapper>
@@ -137,6 +148,15 @@ font-family: 'Libre Baskerville', serif;
 opacity: 0.7;
 color: #4d660f;
 text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+`;
+const ProgramsCardsWrapper = styled.div`
+  width: 60%;
+
+`;
+const ProgramsContentWrapper = styled.div`
+  width: 60%;
+
+  
 `;
 const FooterWrapper = styled.div`
 width: 100%;
